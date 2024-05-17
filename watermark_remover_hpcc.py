@@ -426,13 +426,12 @@ def fit(train_ds, test_ds, steps):
       display.clear_output(wait=True)
 
       if step != 0:
-        print(f"Time taken for 1000 steps: {time.time()-start:.2f} sec")
-        print()
-
+        print("Time taken for 1000 steps: " + str(time.time()-start:.2f) + " sec\n")
+        
       start = time.time()
 
       # generate_images(generator, example_input, example_target)
-      print(f"Step: {step//1000}k")
+      print("Step: " + str(step//1000) + "k")
 
     train_step(input_image, target, step)
 
