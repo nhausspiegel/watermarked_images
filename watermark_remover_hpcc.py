@@ -426,7 +426,8 @@ def fit(train_ds, test_ds, steps):
       display.clear_output(wait=True)
 
       if step != 0:
-        print(f"Time taken for 1000 steps: {time.time()-start:.2f} sec\n")
+        print(f"Time taken for 1000 steps: {time.time()-start:.2f} sec")
+        print()
 
       start = time.time()
 
